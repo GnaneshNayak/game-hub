@@ -1,6 +1,4 @@
-import { Badge, Text } from '@chakra-ui/react';
-import React from 'react';
-import { Game } from '../hooks/useGames';
+import { Badge } from '@chakra-ui/react';
 
 interface Props {
   score: number;
