@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 import { useInfiniteQuery, useQuery } from '@tanstack/react-query';
 import { GameQuery } from '../App';
 import ApiClient, { FetchResponse } from '../services/api-client';
 import { Platform } from './usePlatforms';
 
 const apiClient = new ApiClient<Game>('/games');
+=======
+import { useInfiniteQuery, useQueries, useQuery } from '@tanstack/react-query';
+import { GameQuery } from '../App';
+import APIClient, { FetchResponse } from '../services/api-client';
+import { Platform } from './usePlatforms';
+
+const apiClient = new APIClient<Game>('/games');
+>>>>>>> 9caead3 (previous Data)
 export interface Game {
   id: number;
   name: string;
@@ -29,6 +38,10 @@ const useGames = (gameQuery: GameQuery) =>
     getNextPageParam: (lastpage, allpages) => {
       return lastpage.next ? allpages.length + 1 : undefined;
     },
+<<<<<<< HEAD
+=======
+    staleTime: 24 * 60 * 60 * 1000,
+>>>>>>> 9caead3 (previous Data)
   });
 
 export default useGames;
