@@ -14,7 +14,7 @@ To start using GameHub locally, follow these steps:
 2. Install the required dependencies by running `npm install`.
 3. Start the web server with `npm run dev`.
 
-## Learning Topics
+##  Topics
 
 Throughout this project, I have gained valuable knowledge and skills in various areas of React development. Here are some of the topics I've covered:
 
